@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		670B025E29C4322500FE6C2D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B025D29C4322500FE6C2D /* main.cpp */; };
 		670B026729C4323500FE6C2D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B026529C4323500FE6C2D /* Metal.framework */; };
 		670B026829C4323500FE6C2D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B026629C4323500FE6C2D /* MetalKit.framework */; };
 		670B026A29C4324200FE6C2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B026929C4324200FE6C2D /* Foundation.framework */; };
-		670B027A29C432B700FE6C2D /* ioVTK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B026D29C432B600FE6C2D /* ioVTK.cpp */; };
-		670B027B29C432B700FE6C2D /* vtk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027229C432B700FE6C2D /* vtk.cpp */; };
-		670B027C29C432B700FE6C2D /* marching_cubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027329C432B700FE6C2D /* marching_cubes.cpp */; };
-		670B027D29C432B700FE6C2D /* ioOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027529C432B700FE6C2D /* ioOFF.cpp */; };
-		670B027E29C432B700FE6C2D /* Array3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027629C432B700FE6C2D /* Array3d.cpp */; };
+		670B028129C47E5800FE6C2D /* metal-cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027F29C47E5800FE6C2D /* metal-cpp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,24 +27,15 @@
 
 /* Begin PBXFileReference section */
 		670B025A29C4322500FE6C2D /* metalFLIP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = metalFLIP; sourceTree = BUILT_PRODUCTS_DIR; };
-		670B025D29C4322500FE6C2D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		670B026529C4323500FE6C2D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		670B026629C4323500FE6C2D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		670B026929C4324200FE6C2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		670B026C29C432B600FE6C2D /* Hasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hasher.h; path = "../../PIC-FLIP/Mable/llib/Hasher.h"; sourceTree = "<group>"; };
-		670B026D29C432B600FE6C2D /* ioVTK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ioVTK.cpp; path = "../../PIC-FLIP/Mable/llib/ioVTK.cpp"; sourceTree = "<group>"; };
-		670B026E29C432B600FE6C2D /* metal-cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp"; path = "../../PIC-FLIP/Mable/llib/metal-cpp"; sourceTree = "<group>"; };
-		670B026F29C432B600FE6C2D /* metal-cpp-extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "metal-cpp-extensions"; path = "../../PIC-FLIP/Mable/llib/metal-cpp-extensions"; sourceTree = "<group>"; };
-		670B027029C432B600FE6C2D /* eigen-3.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "eigen-3.4.0"; path = "../../PIC-FLIP/Mable/llib/eigen-3.4.0"; sourceTree = "<group>"; };
-		670B027129C432B700FE6C2D /* Array3d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Array3d.hpp; path = "../../PIC-FLIP/Mable/llib/Array3d.hpp"; sourceTree = "<group>"; };
-		670B027229C432B700FE6C2D /* vtk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vtk.cpp; path = "../../PIC-FLIP/Mable/llib/vtk.cpp"; sourceTree = "<group>"; };
-		670B027329C432B700FE6C2D /* marching_cubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marching_cubes.cpp; path = "../../PIC-FLIP/Mable/llib/marching_cubes.cpp"; sourceTree = "<group>"; };
-		670B027429C432B700FE6C2D /* vtk.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = vtk.hpp; path = "../../PIC-FLIP/Mable/llib/vtk.hpp"; sourceTree = "<group>"; };
-		670B027529C432B700FE6C2D /* ioOFF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ioOFF.cpp; path = "../../PIC-FLIP/Mable/llib/ioOFF.cpp"; sourceTree = "<group>"; };
-		670B027629C432B700FE6C2D /* Array3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Array3d.cpp; path = "../../PIC-FLIP/Mable/llib/Array3d.cpp"; sourceTree = "<group>"; };
-		670B027729C432B700FE6C2D /* marching_cubes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = marching_cubes.hpp; path = "../../PIC-FLIP/Mable/llib/marching_cubes.hpp"; sourceTree = "<group>"; };
-		670B027829C432B700FE6C2D /* ioVTK.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ioVTK.hpp; path = "../../PIC-FLIP/Mable/llib/ioVTK.hpp"; sourceTree = "<group>"; };
-		670B027929C432B700FE6C2D /* ioOFF.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ioOFF.hpp; path = "../../PIC-FLIP/Mable/llib/ioOFF.hpp"; sourceTree = "<group>"; };
+		670B027F29C47E5800FE6C2D /* metal-cpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "metal-cpp.cpp"; sourceTree = "<group>"; };
+		670B028029C47E5800FE6C2D /* metal-cpp.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "metal-cpp.hpp"; sourceTree = "<group>"; };
+		670B028329C47FC200FE6C2D /* metal-cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "metal-cpp"; sourceTree = "<group>"; };
+		670B028A29C47FC200FE6C2D /* metal-cpp-extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "metal-cpp-extensions"; sourceTree = "<group>"; };
+		670B029729C480D500FE6C2D /* eigen-3.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "eigen-3.4.0"; sourceTree = "<group>"; };
+		670B029829C480DD00FE6C2D /* mylib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +73,8 @@
 		670B025C29C4322500FE6C2D /* metalFLIP */ = {
 			isa = PBXGroup;
 			children = (
-				670B025D29C4322500FE6C2D /* main.cpp */,
+				670B027F29C47E5800FE6C2D /* metal-cpp.cpp */,
+				670B028029C47E5800FE6C2D /* metal-cpp.hpp */,
 			);
 			path = metalFLIP;
 			sourceTree = "<group>";
@@ -105,20 +92,10 @@
 		670B026B29C4329900FE6C2D /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				670B027629C432B700FE6C2D /* Array3d.cpp */,
-				670B027129C432B700FE6C2D /* Array3d.hpp */,
-				670B027029C432B600FE6C2D /* eigen-3.4.0 */,
-				670B026C29C432B600FE6C2D /* Hasher.h */,
-				670B027529C432B700FE6C2D /* ioOFF.cpp */,
-				670B027929C432B700FE6C2D /* ioOFF.hpp */,
-				670B026D29C432B600FE6C2D /* ioVTK.cpp */,
-				670B027829C432B700FE6C2D /* ioVTK.hpp */,
-				670B027329C432B700FE6C2D /* marching_cubes.cpp */,
-				670B027729C432B700FE6C2D /* marching_cubes.hpp */,
-				670B026E29C432B600FE6C2D /* metal-cpp */,
-				670B026F29C432B600FE6C2D /* metal-cpp-extensions */,
-				670B027229C432B700FE6C2D /* vtk.cpp */,
-				670B027429C432B700FE6C2D /* vtk.hpp */,
+				670B029829C480DD00FE6C2D /* mylib */,
+				670B029729C480D500FE6C2D /* eigen-3.4.0 */,
+				670B028329C47FC200FE6C2D /* metal-cpp */,
+				670B028A29C47FC200FE6C2D /* metal-cpp-extensions */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -180,12 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				670B027E29C432B700FE6C2D /* Array3d.cpp in Sources */,
-				670B027B29C432B700FE6C2D /* vtk.cpp in Sources */,
-				670B027C29C432B700FE6C2D /* marching_cubes.cpp in Sources */,
-				670B025E29C4322500FE6C2D /* main.cpp in Sources */,
-				670B027A29C432B700FE6C2D /* ioVTK.cpp in Sources */,
-				670B027D29C432B700FE6C2D /* ioOFF.cpp in Sources */,
+				670B028129C47E5800FE6C2D /* metal-cpp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +170,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -256,7 +228,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -307,6 +279,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHN7NN92K6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib/eigen-3.4.0\"",
+					"\"$(SRCROOT)/lib/metal-cpp\"",
+					"\"$(SRCROOT)/lib/metal-cpp-extensions\"",
+					"\"$(SRCROOT)/lib/mylib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -317,6 +295,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UHN7NN92K6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/lib/eigen-3.4.0\"",
+					"\"$(SRCROOT)/lib/metal-cpp\"",
+					"\"$(SRCROOT)/lib/metal-cpp-extensions\"",
+					"\"$(SRCROOT)/lib/mylib\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
