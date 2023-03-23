@@ -11,6 +11,17 @@
 		670B026829C4323500FE6C2D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B026629C4323500FE6C2D /* MetalKit.framework */; };
 		670B026A29C4324200FE6C2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 670B026929C4324200FE6C2D /* Foundation.framework */; };
 		670B028129C47E5800FE6C2D /* metal-cpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B027F29C47E5800FE6C2D /* metal-cpp.cpp */; };
+		670B02A329CC43AE00FE6C2D /* watersurface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B029B29CC43AE00FE6C2D /* watersurface.cpp */; };
+		670B02A429CC43AE00FE6C2D /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B029F29CC43AE00FE6C2D /* particle.cpp */; };
+		670B02A529CC43AE00FE6C2D /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02A029CC43AE00FE6C2D /* functions.cpp */; };
+		670B02A629CC43AE00FE6C2D /* Fluid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02A129CC43AE00FE6C2D /* Fluid.cpp */; };
+		670B02A729CC43AE00FE6C2D /* Flip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02A229CC43AE00FE6C2D /* Flip.cpp */; };
+		670B02B529CC456B00FE6C2D /* ioOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02AC29CC456B00FE6C2D /* ioOFF.cpp */; };
+		670B02B629CC456B00FE6C2D /* Array3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02B329CC456B00FE6C2D /* Array3d.cpp */; };
+		670B02B729CC456B00FE6C2D /* ioVTK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02B029CC456B00FE6C2D /* ioVTK.cpp */; };
+		670B02B829CC456B00FE6C2D /* vtk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02AE29CC456B00FE6C2D /* vtk.cpp */; };
+		670B02B929CC456B00FE6C2D /* marching_cubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02AD29CC456B00FE6C2D /* marching_cubes.cpp */; };
+		670B02BC29CC465F00FE6C2D /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 670B02BA29CC465F00FE6C2D /* Renderer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +46,29 @@
 		670B028329C47FC200FE6C2D /* metal-cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "metal-cpp"; sourceTree = "<group>"; };
 		670B028A29C47FC200FE6C2D /* metal-cpp-extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "metal-cpp-extensions"; sourceTree = "<group>"; };
 		670B029729C480D500FE6C2D /* eigen-3.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "eigen-3.4.0"; sourceTree = "<group>"; };
-		670B029829C480DD00FE6C2D /* mylib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mylib; sourceTree = "<group>"; };
+		670B029929CC43AE00FE6C2D /* watersurface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = watersurface.hpp; sourceTree = "<group>"; };
+		670B029A29CC43AE00FE6C2D /* Fluid.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Fluid.hpp; sourceTree = "<group>"; };
+		670B029B29CC43AE00FE6C2D /* watersurface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = watersurface.cpp; sourceTree = "<group>"; };
+		670B029C29CC43AE00FE6C2D /* particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = particle.hpp; sourceTree = "<group>"; };
+		670B029D29CC43AE00FE6C2D /* functions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
+		670B029E29CC43AE00FE6C2D /* Flip.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Flip.hpp; sourceTree = "<group>"; };
+		670B029F29CC43AE00FE6C2D /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		670B02A029CC43AE00FE6C2D /* functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		670B02A129CC43AE00FE6C2D /* Fluid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fluid.cpp; sourceTree = "<group>"; };
+		670B02A229CC43AE00FE6C2D /* Flip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flip.cpp; sourceTree = "<group>"; };
+		670B02AA29CC456B00FE6C2D /* ioOFF.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ioOFF.hpp; sourceTree = "<group>"; };
+		670B02AB29CC456B00FE6C2D /* marching_cubes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = marching_cubes.hpp; sourceTree = "<group>"; };
+		670B02AC29CC456B00FE6C2D /* ioOFF.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ioOFF.cpp; sourceTree = "<group>"; };
+		670B02AD29CC456B00FE6C2D /* marching_cubes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = marching_cubes.cpp; sourceTree = "<group>"; };
+		670B02AE29CC456B00FE6C2D /* vtk.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vtk.cpp; sourceTree = "<group>"; };
+		670B02AF29CC456B00FE6C2D /* vtk.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = vtk.hpp; sourceTree = "<group>"; };
+		670B02B029CC456B00FE6C2D /* ioVTK.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ioVTK.cpp; sourceTree = "<group>"; };
+		670B02B129CC456B00FE6C2D /* Array3d.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array3d.hpp; sourceTree = "<group>"; };
+		670B02B229CC456B00FE6C2D /* ioVTK.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ioVTK.hpp; sourceTree = "<group>"; };
+		670B02B329CC456B00FE6C2D /* Array3d.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Array3d.cpp; sourceTree = "<group>"; };
+		670B02B429CC456B00FE6C2D /* Hasher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hasher.h; sourceTree = "<group>"; };
+		670B02BA29CC465F00FE6C2D /* Renderer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		670B02BB29CC465F00FE6C2D /* Renderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +106,30 @@
 		670B025C29C4322500FE6C2D /* metalFLIP */ = {
 			isa = PBXGroup;
 			children = (
+				670B02B329CC456B00FE6C2D /* Array3d.cpp */,
+				670B02B129CC456B00FE6C2D /* Array3d.hpp */,
+				670B02B429CC456B00FE6C2D /* Hasher.h */,
+				670B02AC29CC456B00FE6C2D /* ioOFF.cpp */,
+				670B02AA29CC456B00FE6C2D /* ioOFF.hpp */,
+				670B02B029CC456B00FE6C2D /* ioVTK.cpp */,
+				670B02B229CC456B00FE6C2D /* ioVTK.hpp */,
+				670B02AD29CC456B00FE6C2D /* marching_cubes.cpp */,
+				670B02AB29CC456B00FE6C2D /* marching_cubes.hpp */,
+				670B02AE29CC456B00FE6C2D /* vtk.cpp */,
+				670B02AF29CC456B00FE6C2D /* vtk.hpp */,
+				670B02A229CC43AE00FE6C2D /* Flip.cpp */,
+				670B029E29CC43AE00FE6C2D /* Flip.hpp */,
+				670B02A129CC43AE00FE6C2D /* Fluid.cpp */,
+				670B029A29CC43AE00FE6C2D /* Fluid.hpp */,
+				670B02A029CC43AE00FE6C2D /* functions.cpp */,
+				670B029D29CC43AE00FE6C2D /* functions.hpp */,
+				670B029F29CC43AE00FE6C2D /* particle.cpp */,
+				670B029C29CC43AE00FE6C2D /* particle.hpp */,
+				670B029B29CC43AE00FE6C2D /* watersurface.cpp */,
+				670B029929CC43AE00FE6C2D /* watersurface.hpp */,
 				670B027F29C47E5800FE6C2D /* metal-cpp.cpp */,
+				670B02BA29CC465F00FE6C2D /* Renderer.cpp */,
+				670B02BB29CC465F00FE6C2D /* Renderer.hpp */,
 				670B028029C47E5800FE6C2D /* metal-cpp.hpp */,
 			);
 			path = metalFLIP;
@@ -92,7 +148,6 @@
 		670B026B29C4329900FE6C2D /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				670B029829C480DD00FE6C2D /* mylib */,
 				670B029729C480D500FE6C2D /* eigen-3.4.0 */,
 				670B028329C47FC200FE6C2D /* metal-cpp */,
 				670B028A29C47FC200FE6C2D /* metal-cpp-extensions */,
@@ -157,7 +212,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				670B02BC29CC465F00FE6C2D /* Renderer.cpp in Sources */,
+				670B02B529CC456B00FE6C2D /* ioOFF.cpp in Sources */,
+				670B02B929CC456B00FE6C2D /* marching_cubes.cpp in Sources */,
+				670B02A729CC43AE00FE6C2D /* Flip.cpp in Sources */,
+				670B02B629CC456B00FE6C2D /* Array3d.cpp in Sources */,
 				670B028129C47E5800FE6C2D /* metal-cpp.cpp in Sources */,
+				670B02A629CC43AE00FE6C2D /* Fluid.cpp in Sources */,
+				670B02A329CC43AE00FE6C2D /* watersurface.cpp in Sources */,
+				670B02A429CC43AE00FE6C2D /* particle.cpp in Sources */,
+				670B02A529CC43AE00FE6C2D /* functions.cpp in Sources */,
+				670B02B729CC456B00FE6C2D /* ioVTK.cpp in Sources */,
+				670B02B829CC456B00FE6C2D /* vtk.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
