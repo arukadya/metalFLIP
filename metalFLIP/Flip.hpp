@@ -45,6 +45,8 @@ struct PIC_FLIP : Fluid{
     double mp;
     double gamma;
     double threshold;
+    PIC_FLIP():Fluid(){
+    }
     PIC_FLIP(double x,double t,double density,double r,double th,double ga):Fluid(x,t,density){
         radius = dx/2*3;
         mp = pow(radius,3)/3*4*3.14;
@@ -58,6 +60,8 @@ struct PIC_FLIP : Fluid{
         origin = {0,0,0};
         dist = {dx,dx,dx};
     };
+    void setParamators(double x,double t,double density,double r,double th,double ga);
+    void onecycle();
     void execute(std::string foldername,std::string filename);
     void output(std::vector<Eigen::Vector3d> &v);
     void initParticles();

@@ -6,6 +6,9 @@
 //
 
 #include "Fluid.hpp"
+Fluid::Fluid(){
+    
+}
 Fluid::Fluid(double x,double t,double density){
     dx = x;
     dt = t;
@@ -13,6 +16,7 @@ Fluid::Fluid(double x,double t,double density){
     L = dx*Nx;
     vfi.reset(f0.y());
 }
+
 std::vector<int>Fluid::DirichletBoundaryCondition(int i,int j,int k,std::unordered_map<std::vector<int>,std::vector<int>,ArrayHasher<3>>&map){
     std::vector<int>ret(6,1);
     if(i == Nx-1)ret[0] = 0;

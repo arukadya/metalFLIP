@@ -6,7 +6,32 @@
 //
 
 #include "Flip.hpp"
-
+void PIC_FLIP::setParamators(double x,double t,double density,double r,double th,double ga){
+    mp = pow(radius,3)/3*4*3.14;
+    gamma = 1;
+    threshold = 1;
+    division = {Nx,Ny,Nz};
+    initParticles();
+    radius = r;
+    threshold = th;
+    gamma = ga;
+    origin = {0,0,0};
+    dist = {dx,dx,dx};
+}
+void PIC_FLIP::onecycle(){
+    TD.startTimer("execute");
+    preprocessingParticles();
+    particlesVelocityToGrid();
+    calGridPressure();
+    gridVelocityToParticles();
+    advectParticles();
+    output(vertices);
+    implicit_function = cal_implicitFunction(particles, map, radius, dx, Nx, Ny, Nz);
+    std::vector<double>data = implicit_function.convert2Vector();
+    ImplicitFunction<double> imp = ImplicitFunction<double>(Nx*Ny*Nz, Nx, Ny, Nz, dx, dx, dx, data);
+    marching_cubes(marchingVertices, marchingFaces, origin, dist, imp, threshold);
+    TD.endTimer();
+}
 void PIC_FLIP::execute(std::string foldername,std::string filename){
     int cnt = 0;
     for(unsigned int i=0;i<repeatCount;i++){

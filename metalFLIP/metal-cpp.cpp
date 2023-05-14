@@ -26,7 +26,6 @@
 #include <MetalKit/MetalKit.hpp>
 #include "Renderer.hpp"
 #include <simd/simd.h>
-
 #pragma region Declarations {
 
 
@@ -141,7 +140,7 @@ void MyAppDelegate::applicationWillFinishLaunching( NS::Notification* pNotificat
 
 void MyAppDelegate::applicationDidFinishLaunching( NS::Notification* pNotification )
 {
-    CGRect frame = (CGRect){ {100.0, 100.0}, {512.0, 512.0} };
+    CGRect frame = (CGRect){ {100.0, 100.0}, {1024.0, 1024.0} };
 
     _pWindow = NS::Window::alloc()->init(
         frame,
@@ -153,13 +152,15 @@ void MyAppDelegate::applicationDidFinishLaunching( NS::Notification* pNotificati
 
     _pMtkView = MTK::View::alloc()->init( frame, _pDevice );
     _pMtkView->setColorPixelFormat( MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB );
-    _pMtkView->setClearColor( MTL::ClearColor::Make( 1.0, 0.0, 0.0, 1.0 ) );
+    _pMtkView->setClearColor( MTL::ClearColor::Make( 0.1, 0.1, 0.1, 1.0 ) );
+    _pMtkView->setDepthStencilPixelFormat( MTL::PixelFormat::PixelFormatDepth16Unorm );
+    _pMtkView->setClearDepth( 1.0f );
 
     _pViewDelegate = new MyMTKViewDelegate( _pDevice );
     _pMtkView->setDelegate( _pViewDelegate );
 
     _pWindow->setContentView( _pMtkView );
-    _pWindow->setTitle( NS::String::string( "04 - Instancing", NS::StringEncoding::UTF8StringEncoding ) );
+    _pWindow->setTitle( NS::String::string( "09 - Compute to Render", NS::StringEncoding::UTF8StringEncoding ) );
 
     _pWindow->makeKeyAndOrderFront( nullptr );
 
@@ -195,11 +196,3 @@ void MyMTKViewDelegate::drawInMTKView( MTK::View* pView )
 }
 
 #pragma endregion ViewDelegate }
-
-
-#pragma mark - Renderer
-#pragma region Renderer {
-
-
-
-#pragma endregion Renderer }

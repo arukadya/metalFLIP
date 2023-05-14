@@ -10,11 +10,12 @@
 void TimeDisplayer::startTimer(const char* s){
     startTime = std::chrono::system_clock::now();
     str = s;
+    std::cout << str;
 }
 void TimeDisplayer::endTimer(){
     endTime = std::chrono::system_clock::now();
     double time = static_cast<double>(std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count());
-    std::cout << str << ":" << time << "ms" << std::endl;
+    std::cout << ":" << time << "ms" << std::endl;
     std::cout << std::endl;
 }
 
